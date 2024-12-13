@@ -24,6 +24,8 @@ bool read(i64 &a, i64 &b, i64 &c, i64 &f, i64 &g, i64 &h) {
 }
 
 i64 solve(i64 a, i64 b, i64 c, i64 f, i64 g, i64 h) {
+    assert(a * g != b * f);
+
     if ((c * g - b * h) % (a * g - b * f))
         return 0;
     i64 x = (c * g - b * h) / (a * g - b * f);
