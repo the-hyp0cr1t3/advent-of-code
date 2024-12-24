@@ -4,8 +4,6 @@ constexpr std::string_view xmas = "XMAS";
 constexpr std::pair<int, int> dir[] = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, -1}, {1, 1}, {-1, -1}, {-1, 1}};
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::vector<std::string> grid;
     for (std::string line; std::getline(std::cin, line); )
         grid.push_back(line);

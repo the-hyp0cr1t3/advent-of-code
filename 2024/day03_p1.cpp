@@ -14,8 +14,6 @@ std::optional<int> find_int(std::string_view s, size_t &pos) {
 }
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     long long ans = 0;
     std::string s;
 

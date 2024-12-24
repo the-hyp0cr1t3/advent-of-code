@@ -34,8 +34,6 @@ bool is_good(auto &&r) {
 }
  
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     int ans = 0;
 
     int total_lines = 0;

@@ -4,8 +4,6 @@ std::array<int, 4> dx = {-1, 0, 1, 0}, dy = {0, 1, 0, -1};
 constexpr std::string_view dir = "^>v<";
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::vector<std::string> a;
     for (std::string line; std::getline(std::cin, line) and !line.empty(); )
         a.push_back(line);

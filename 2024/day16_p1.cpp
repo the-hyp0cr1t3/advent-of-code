@@ -18,7 +18,7 @@ std::array<int, 4> dx = {-1, 0, 1, 0}, dy = {0, 1, 0, -1};
 auto chmin = [](auto &A, auto B) { return B < A? A = B, true : false; };
 
 int main() {
-        std::vector<std::string> a;
+    std::vector<std::string> a;
     for (std::string line; std::getline(std::cin, line) and !line.empty(); )
         a.push_back(line);
 

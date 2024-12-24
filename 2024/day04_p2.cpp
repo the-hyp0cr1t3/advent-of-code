@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::vector<std::string> grid;
     for (std::string line; std::getline(std::cin, line); )
         grid.push_back(line);

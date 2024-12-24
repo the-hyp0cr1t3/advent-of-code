@@ -3,8 +3,6 @@
 std::array<int, 4> dx = {-1, 0, 1, 0}, dy = {0, 1, 0, -1};
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::vector<std::string> a;
     for (std::string line; std::getline(std::cin, line); )
         a.push_back(line);

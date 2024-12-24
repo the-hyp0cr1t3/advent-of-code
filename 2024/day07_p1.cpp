@@ -20,8 +20,6 @@ std::vector<T> read(std::string_view s) {
 }
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     i64 ans = 0;
 
     int total_lines = 0;

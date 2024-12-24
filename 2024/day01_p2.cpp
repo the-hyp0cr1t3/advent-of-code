@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
  
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::vector<int> p;
     std::map<int, int> cnt;
 

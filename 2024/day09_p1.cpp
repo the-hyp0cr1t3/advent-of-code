@@ -5,8 +5,6 @@ auto sum = [](int i, int l) {
 };
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::string s;
     std::cin >> s;
     std::println(stderr, "read {} chars", s.length());

@@ -26,8 +26,6 @@ auto pow10 = [](i64 x) {
 };
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     i64 ans = 0;
 
     int total_lines = 0;

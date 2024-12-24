@@ -11,8 +11,6 @@ pii& operator+=(pii &l, const pii &r) {
 }
 
 int main() {
-    std::cin.tie(nullptr)->sync_with_stdio(false);
-
     std::vector<std::string> a;
     for (std::string line; std::getline(std::cin, line); )
         a.push_back(line);
