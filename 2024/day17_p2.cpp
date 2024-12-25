@@ -48,13 +48,13 @@ int run(i64 A, i64 B, i64 C, std::vector<int> program) {
     assert(false);
 }
 
-i64 recur(i64 A, i64 B, i64 C, const std::vector<int> &program, int cur) {
+i64 recur(const std::vector<int> &program, i64 A, int cur) {
     if (cur == -1) return A;
     
     for (int i = 0; i < 8; i++) {
         i64 nA = (A << 3) | i;
         if (run(nA, B, C, program) == program[cur]) {
-            auto ans = recur(nA, B, C, program, cur - 1);
+            auto ans = recur(program, nA, cur - 1);
             if (~ans) return ans;
         }
     }
@@ -66,19 +66,10 @@ int main() {
     using std::operator""sv;
 
     std::string line;
-    i64 A, B, C;
-    std::getline(std::cin, line);
-    std::sscanf(line.c_str(), "Register A: %lld", &A);
-    std::getline(std::cin, line);
-    std::sscanf(line.c_str(), "Register B: %lld", &B);
-    std::getline(std::cin, line);
-    std::sscanf(line.c_str(), "Register C: %lld", &C);
-
-    std::getline(std::cin, line);
-    std::getline(std::cin, line);
+    for (int i = 0; i < 5; i++)
+        std::getline(std::cin, line);
     auto program = read<int>(line.substr(9), ","sv);
 
-    A = recur(0, B, C, program, program.size() - 1);
-    assert(A != -1);
+    i64 A = recur(program, 0, program.size() - 1);
     std::println("{}", A);
 }
